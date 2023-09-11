@@ -7,6 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script scr="index.js"></script>
+    <div class="container">
+        <div class="slider">
+            <div class="slide active">
+                <img src="img/slide1.jpg" alt="slide" class="slide__img">
+                <p class="slide__text">*стук в дверь* <br>учительница английского:</p>
+            </div>
+            <div class="slide">
+                <img src="img/slide2.jpg" alt="slide" class="slide__img">
+                <p class="slide__text">What's dis? Dis an aplle <br>What's dis</p>
+            </div>
+            <div class="slide">
+                <img src="img/slide3.jpg" alt="slide" class="slide__img">
+                <p class="slide__text">я в магазине делаю вид, что ничего не украл, хотя я ничего и не крал</p>
+            </div>
+            <div class="slide">
+                <img src="img/slide4.jpg" alt="slide" class="slide__img">
+                <p class="slide__text">how to stop procrastinating</p>
+            </div>
+    
+            <div class="slider__dots">
+                <span class="dot active" onclick="clickOnDot(0)"></span>
+                <span class="dot" onclick="clickOnDot(1)"></span>
+                <span class="dot" onclick="clickOnDot(2)"></span>
+                <span class="dot" onclick="clickOnDot(3)"></span>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
