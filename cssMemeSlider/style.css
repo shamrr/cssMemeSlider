@@ -100,10 +100,10 @@ body{
     }
     .slide__text {
         max-width: 100%;
-        text-align: center;
+        align-self: center;
     }
     .slider__dots {
-        bottom: 7.5rem;
+        bottom: 9rem;
         left: 50%;
         transform: translateX(-50%);
         max-width: 12rem;
@@ -116,6 +116,9 @@ body{
     }
     .slide__img {
         width: 30rem;
+    }
+    .slide__text{
+        align-self: center;
     }
 }
 
