@@ -14,6 +14,7 @@ body{
     max-width: 550px;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 .slide{
     display: none;
@@ -23,14 +24,30 @@ body{
     flex-direction: column;
     align-items:center;
     gap: 10px;
-    z-index: 1;
-    
+    animation: smoothSLide 1s ease;
+}
+@keyframes smoothSLide{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
 .slide__text{
     color: rgb(192, 192, 192);
     font-size: 18px;
     max-width: 300px;
     align-self: start;
+    animation: smoothText ease-in 3s;
+}
+@keyframes smoothText{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .slide__img{
     width: 550px;
