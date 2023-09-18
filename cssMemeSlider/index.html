@@ -9,31 +9,41 @@
 <body>
     <div class="container">
         <div class="slider">
-            <div class="slide active">
-                <img src="img/slide1.jpg" alt="slide" class="slide__img">
-                <p class="slide__text">*стук в дверь* <br>учительница английского:</p>
+            <input type="radio" name="r" id="r1" class="slider__input" checked>
+            <input type="radio" name="r" id="r2" class="slider__input">
+            <input type="radio" name="r" id="r3" class="slider__input">
+            <input type="radio" name="r" id="r4" class="slider__input">
+
+            <div class="slides">
+                <div class="slide s1">
+                    <img alt="slide" src="img/slide1.jpg">
+                </div>
+                <div class="slide s2">
+                    <img alt="slide" src="img/slide2.jpg">
+                </div>
+                <div class="slide s3">
+                    <img alt="slide" src="img/slide3.jpg">
+                </div>
+                <div class="slide s4">
+                    <img alt="slide" src="img/slide4.jpg">
+                </div>
             </div>
-            <div class="slide">
-                <img src="img/slide2.jpg" alt="slide" class="slide__img">
-                <p class="slide__text">What's dis? Dis an aplle <br>What's dis</p>
-            </div>
-            <div class="slide">
-                <img src="img/slide3.jpg" alt="slide" class="slide__img">
-                <p class="slide__text">я в магазине делаю вид, что ничего не украл, хотя я ничего и не крал</p>
-            </div>
-            <div class="slide">
-                <img src="img/slide4.jpg" alt="slide" class="slide__img">
-                <p class="slide__text">Мемы раньше: *много смысла, в каждом можно найти мораль* <br>Мемы сейчас:</p>
-            </div>
-    
-            <div class="slider__dots">
-                <span class="dot active" onclick="clickOnDot(0)"></span>
-                <span class="dot" onclick="clickOnDot(1)"></span>
-                <span class="dot" onclick="clickOnDot(2)"></span>
-                <span class="dot" onclick="clickOnDot(3)"></span>
+
+            <div class="slider__content">
+                <div class="slider__phrases">
+                    <span class="slide__text">*стук в дверь* <br>учительница английского:</span>
+                    <span class="slide__text">What's dis? Dis an apple <br>What's dis</span>
+                    <span class="slide__text">я в магазине делаю вид, что ничего не украл, хотя я ничего и не крал</span>
+                    <span class="slide__text">Пепельница обычного человека VS пепельница курильщика</span>
+                </div>
+                <div class="slider__controls">
+                    <label for="r1" class="slider__label"></label>
+                    <label for="r2" class="slider__label"></label>
+                    <label for="r3" class="slider__label"></label>
+                    <label for="r4" class="slider__label"></label>
+                </div>
             </div>
         </div>
     </div>
-    <script src="index.js"></script>
 </body>
 </html>
